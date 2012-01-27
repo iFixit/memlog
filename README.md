@@ -24,8 +24,8 @@ Basic usage is as follows:
     
     $memlog->stop();
 
-Log files are saved with a base path of MemLog::$basePath, Unless you have
-a compelling reason, /tmp is a good choice for $basePath.
+Log files are saved with a base path of `MemLog::$basePath`, Unless you have
+a compelling reason, `/tmp` is a good choice for `$basePath`.
 
 Also included is a very basic MemLog viewer. You **should not** host the
 viewer on a production server, as it has some security concerns because it's

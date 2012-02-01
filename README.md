@@ -46,7 +46,7 @@ Patches and contributions are welcome. You can contact the author at
 MemLog is released as open source software under the zlib license. In a
 nutshell, this means you are free to use, modify, and redistribute it,
 regardless of whether your project is open source or proprietary. See the text
-of the zlib license in LICESE for more information.
+of the zlib license in `LICENSE` for more information.
 
 The included example viewer uses the dygraphs JavaScript charting library. Use
 of the included viewer is thus also subject to the

@@ -1,5 +1,7 @@
 # MemLog: A quick and dirty memory usage profiler for PHP
 
+![Screenshot](http://i.imgur.com/ywF84.png)
+
 MemLog can be used to log memory usage of your PHP code over time, with the
 intention of helping you locate where you're running into memory usage
 problems. **It is not a full-featured profiling tool like Xdebug or

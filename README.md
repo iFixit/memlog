@@ -15,6 +15,8 @@ the following fields:
      class name of the currently executing code, if any (string),
      function name of the currently executing code, if any (string)]
 
+## Usage
+
 Basic usage is as follows:
 
     $memlog = new MemLog();
@@ -26,10 +28,22 @@ Basic usage is as follows:
 
 Log files are saved with a base path of `MemLog::$basePath`, Unless you have
 a compelling reason, `/tmp` is a good choice for `$basePath`.
+          
+## Log Viewer
 
 Also included is a very basic MemLog viewer. You **should not** host the
 viewer on a production server, as it has some security concerns because it's
 a quick and dirty example of how you can show MemLog files in a meaningful
 way.
 
-Patches/contributions are welcome.
+## Patches
+
+Patches and contributions are welcome. You can contact the author at
+`bob AT ifixit DOT com`.
+
+## License
+
+MemLog is released as open source software under the zlib license. In a
+nutshell, this means you are free to use, modify, and redistribute it,
+regardless of whether your project is open source or proprietary. See the text
+of the zlib license in LICESE for more information.

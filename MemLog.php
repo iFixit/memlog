@@ -107,7 +107,7 @@ class MemLog {
       }
 
       $this->buffer[] = array(
-         $timestamp,
+         sprintf("%0.6f", $timestamp),
          $memory,
          $file,
          $line,

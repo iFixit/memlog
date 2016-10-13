@@ -88,7 +88,9 @@ class MemLog {
       $class = '';
       $function = '';
       $line = '';
-      $backtrace = debug_backtrace();
+      // Don't get arguments of functions, and only get the top two stack
+      // frames
+      $backtrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 2);
       if (isset($backtrace[0])) {
          if (isset($backtrace[0]['file'])) {
             $file = basename($backtrace[0]['file']);

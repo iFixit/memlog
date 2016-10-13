@@ -87,10 +87,11 @@ class MemLog {
       $file = '';
       $class = '';
       $function = '';
+      $line = '';
       $backtrace = debug_backtrace();
-      if (isset($backtrace[1])) {
-         if (isset($backtrace[1]['file'])) {
-            $file = basename($backtrace[1]['file']);
+      if (isset($backtrace[0])) {
+         if (isset($backtrace[0]['file'])) {
+            $file = basename($backtrace[0]['file']);
          }
          if (isset($backtrace[1]['class'])) {
             $class = $backtrace[1]['class'];
@@ -98,12 +99,16 @@ class MemLog {
          if (isset($backtrace[1]['function'])) {
             $function = $backtrace[1]['function'];
          }
+         if (isset($backtrace[0]['line'])) {
+            $line = $backtrace[0]['line'];
+         }
       }
 
       $this->buffer[] = array(
          $timestamp,
          $memory,
          $file,
+         $line,
          $class,
          $function
       );
